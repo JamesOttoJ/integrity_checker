@@ -21,7 +21,7 @@ jobs:
       run: sudo apt-get update && sudo apt-get upgrade
       
     - name: Apt install deps
-      run: sudo apt install libssl-dev libcurl-dev upx -y
+      run: sudo apt install libssl-dev libcurl4-openssl-dev upx -y
 
     - name: Make programs
       run: make
